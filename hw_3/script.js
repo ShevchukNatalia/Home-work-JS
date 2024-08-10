@@ -40,7 +40,7 @@ while (bloc <= 20) {
 
 let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
 for (let i = 0; i < listOfItems.length; i++) {
-    document.write(`<ul> <li>${listOfItems[i]}</li></ul>`);
+    document.write(`<ul class="list"> <li>${listOfItems[i]}</li></ul>`);
 }
 
 // Використовуючи данні з масиву, за допомоги document.write та циклу
@@ -98,8 +98,6 @@ let users = [
     {name: 'olya', age: 31, status: false},
     {name: 'max', age: 31, status: true}
 ];
-
-
    let arrTrue = [];
    let arrFalse = [];
    let arrAge = [];

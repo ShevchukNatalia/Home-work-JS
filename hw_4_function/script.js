@@ -22,12 +22,12 @@ let radiys = 10;
 console.log(`якщо висота циліндру ${height} та радіус ${radiys} то площациліндра дорівнює ${heightCylinder(height, radiys)}`);
 
 //4.створити функцію яка приймає масив та виводить кожен його елемент
-let  arrFruits = ['apple', 'cherry', 'pear', 'orange' ];
 function printArray(exitArr){
-        for (const arrElement of arrFruits) {
+        for (const arrElement of exitArr) {
             console.log(arrElement);
         }
 }
+let  arrFruits = ['apple', 'cherry', 'pear', 'orange' ];
 printArray(arrFruits);
 
 
@@ -120,7 +120,6 @@ console.log(swap([22,11,57,35,14],0,1));
 //13.Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 // Приклад exchange(10000,[{currency:'USD',value:25},{currency:'EUR',value:42}],'USD') // => 400
 
-
  function exchange(sumUAH, currencyArray,exchangeCurrency ){
      let result = 0;
          for (const item of currencyArray) {
@@ -145,3 +144,4 @@ console.log(swap([22,11,57,35,14],0,1));
      },
  ];
 console.log(exchange(5000, currencyValues, 'ZLT'));
+

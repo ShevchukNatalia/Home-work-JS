@@ -63,7 +63,6 @@ let coursesAndDurationArray = [
         console.log(div);
 }
 
-
 // 4 - Є масив
 // let coursesAndDurationArray = [
 //     {title: 'JavaScript Complex', monthDuration: 5},

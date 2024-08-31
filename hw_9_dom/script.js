@@ -90,10 +90,11 @@ for (const durationElement of coursesAndDurationArray1) {
 
     let h1 = document.createElement('h2');
     h1.innerText = `${durationElement.title}`;
-    divCourse.appendChild(h1);
+
     let p = document.createElement('p');
     p.innerText = `${durationElement.monthDuration}`;
-    divCourse.appendChild(p);
+    divCourse.append(h1, p);
+
 
   document.body.appendChild(divCourse);
     console.log(divCourse);

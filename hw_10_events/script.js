@@ -5,6 +5,7 @@ console.log('elem');
 button.onclick = function () {
     document.getElementById('text') .style.display = 'none';
 }
+////////////////////////////////////////////
 
 // 2 - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати
 // інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
@@ -18,6 +19,7 @@ document.getElementById('ageButton').addEventListener('click', function (){
         document.getElementById('message').innerText = 'Ви повнолітні';
     }
 })
+/////////////////////////////
 
 // 3 Стоврити форму з трьома полями для name,sruname,age та кнопкою. При натисканні на кнопку зчитати
 // данні з полів, та вивести об'єкт в документ. Іншими словами : заповниои форму, натиснули кнопку,
@@ -39,6 +41,8 @@ form.addEventListener('submit', function (eventObject){
     let outputDiv = document.getElementById('output');
     outputDiv.innerText = `Ім'я: ${userObject.name}, Прізвище: ${userObject.surname}, Вік: ${userObject.age}`;
 })
+/////////////////////////
+
 
 // 4 є сторінка, на якій є блок, я кому знаходиьтся цифра. написати код, який при кожному перезавантажені
 // сторінки буде додавати до неї +1
@@ -61,10 +65,11 @@ document.getElementById('kgInput').addEventListener('input', function() {
         document.getElementById('fnInput').innerText = pounds.toFixed(2);
     }
 });
-
+///////////////
 
 // 7 В localStorage зберігаються масиви. Вам потрібно зробити функцію, які дістає потрібний вам масив з
 // та додає в нього об'єкт сигнатура функції - addToLocalStorage(arrayName:string,objToAdd:any{}):void
+
 function addToLocalStorage(arrayName, objToAdd) {
       let myArray = JSON.parse(localStorage.getItem(arrayName)) || [];
     myArray.push(objToAdd);
@@ -73,11 +78,11 @@ function addToLocalStorage(arrayName, objToAdd) {
 }
 let newObject = { id: 1, name: "Test" };
 addToLocalStorage("myArray", newObject);
-
-
+////////////////////////
 
 // 8  Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 // При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
+
 let btn = document.getElementById('btnTab');
 let container = document.getElementById('container');
 
@@ -105,5 +110,5 @@ btn.addEventListener('click',function (){
     container.appendChild(table);
 });
 
-//
+
 

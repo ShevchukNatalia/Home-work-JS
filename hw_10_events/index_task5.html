@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--<body>-->
+<!--// 5 Є сторінка index.html (назва довільна), при відвідуванні якої в локальне сховще, в масив sessionsList-->
+<!--// зберігається інформація про дату та час відвідування сторінки. Є  сторінка sessionsListPage.html (назва довільна),-->
+<!--// при відвідуванні якої потрібно відмалювати-->
+<!--// всю інформацію про відвідування сторінки index.html. Інфу НЕ виводити в консоль, а малювати в DOM-->
+<!--// Функція для запису відвідування-->
+
+<h1>Сторінка index</h1>
+<script>
+    let now = new Date();
+    let visitDate = now.toLocaleString();
+
+    let sessionsList = JSON.parse(localStorage.getItem('sessionList')) || [];
+    sessionsList.push(visitDate);
+    localStorage.setItem('sessionsList', JSON.stringify(sessionsList));
+</script>
+</body>
+</html>

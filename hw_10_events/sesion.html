@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<h1>Sessions List</h1>
+<ul id="sessionsList"></ul>
+
+<script>
+    let sessionList = JSON.parse(localStorage.getItem('sessionList')) || [];
+    let listElement = document.getElementById('sessionsList');
+
+    for (let i = 0; i < sessionsList.length; i++) {
+        const listItem = document.createElement('li');
+        listItem.textContent = sessionsList[i];
+        listElement.appendChild(listItem);
+    }
+</script>
+</body>
+</html>
